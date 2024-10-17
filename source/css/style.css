@@ -295,6 +295,28 @@ h2 {
     margin-bottom: 18px;
 }
 
+/******** Page Services ********/
+.foods {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.foods .food img {
+    width: 400px;
+}
+
+.food .content-food {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-food p {
+    color: black;
+    font-size: 2rem;
+    font-weight: var(--font-weight);
+}
+
 /******** dicount section ********/
 
 .discount {
