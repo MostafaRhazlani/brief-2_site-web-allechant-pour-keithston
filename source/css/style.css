@@ -331,11 +331,11 @@ h2 {
 
 /******** dicount section ********/
 
-.discount {
+.discount, .about {
     margin: 50px 0;
 }
 
-.discount .image-discount {
+.discount .image-discount, .about .image-about {
     background-image: url("../img/first_order_picture/Rectangle\ 45.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -346,7 +346,11 @@ h2 {
     padding: 45px;
 }
 
-.image-discount h3 {
+.about .image-about {
+    background-image: url("../img/about_us_picture/Rectangle\ 41.png");
+}
+
+.image-discount h3, .image-about h3 {
     font-family: 'Sansita Swashed';
     font-weight: 500;
     font-size: 48px;
@@ -355,16 +359,26 @@ h2 {
     text-align: center;
 }
 
-.image-discount p {
+.image-about h3 {
+    color: var(--secondary-color);
+}
+
+.image-discount p, .image-about p {
     text-align: center;
     color: #5D5D5D;
     font-size: 24px;
     margin: 25px 0;
 }
 
-.discount .btns {
+.image-about p {
+    color: #B9B9B9;
+}
+
+.discount .btns, .about .btns {
     margin: 0;
 }
+
+/******* About section  *****/
 
 /******* start footer ******/
 
