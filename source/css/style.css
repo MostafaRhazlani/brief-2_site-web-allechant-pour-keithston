@@ -108,8 +108,10 @@ header .list {
     font-weight: 400;
 }
 
-.content_home .btns {
+.btns {
     margin-top: 5%;
+    display: flex;
+    align-items: center;
 }
 
 .btns .btn {
@@ -121,12 +123,20 @@ header .list {
     color: var(--secondary-color);
     font-size: 24px;
     font-weight: var(--font-weight);
+    margin-right: 15px;
+    align-content: center;
+    text-align: center;
     transition: 0.6s;
+}
+
+.btns .btn:hover {
+    transition: 0.6s;
+    background-color: var(--primary-color);
+    cursor: pointer;
 }
 
 .btns a {
     color: var(--primary-color);
-    margin-left: 15px;
     font-size: 24px;
     font-weight: var(--font-weight);
     transition: 0.6s;
@@ -235,7 +245,9 @@ h2 {
 
 .name-product {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between; 
+    align-items: center;
+     
 }
 
 .name-product p {
@@ -245,8 +257,8 @@ h2 {
 
 .name-product .btn {
     background-color: var(--btn-color);
-    width: 71px;
-    height: 49px;
+    width: 78px;
+    height: 55px;
     border-radius: 4px;
     border: none;
     color: var(--secondary-color);
@@ -254,7 +266,7 @@ h2 {
     transition: 0.6s;
 }
 
-.btn:hover {
+.name-product .btn:hover {
     transition: 0.6s;
     background-color: var(--primary-color);
     cursor: pointer;
@@ -348,6 +360,10 @@ h2 {
     color: #5D5D5D;
     font-size: 24px;
     margin: 25px 0;
+}
+
+.discount .btns {
+    margin: 0;
 }
 
 /******* start footer ******/
