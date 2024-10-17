@@ -260,6 +260,41 @@ h2 {
     cursor: pointer;
 }
 
+/******* page menu  *******/
+.categories {
+    border-bottom: solid 2px #d9d9d977;
+    margin-bottom: 20px;
+}
+
+.categories .content-categories {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+
+.content-categories a {
+    color: #5D5D5D;
+    font-size: 1.5rem;
+    font-weight: var(--font-weight);
+}
+
+.categorie-active {
+    border-bottom: solid 6px var(--btn-color);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.menu img {
+    width: 400px;
+    margin-bottom: 18px;
+}
+
 /******** dicount section ********/
 
 .discount {
