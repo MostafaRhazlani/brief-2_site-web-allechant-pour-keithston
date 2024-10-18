@@ -64,6 +64,10 @@ section {
     display: none;
 }
 
+header .list span {
+    display: none;
+}
+
 /********* page home ********/
 
 /*** start navbar ***/
@@ -555,13 +559,25 @@ footer .footer-nav {
     }
 
     header .list {
-        background-color: #0000008f;
+        background-color: rgb(17, 24, 26);
         width: 100%;
         position: fixed;
-        top: 100px;
+        top: 0;
         left: -100%;
         text-align: center;
         transition: all 0.4s;
+    }
+
+    header .list span {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        font-size: 40px;
+    }
+
+    .navbar header .list {
+        top: 0;
     }
 
     .list.active {
@@ -661,32 +677,6 @@ footer .footer-nav {
 }
 
 @media (max-width: 750px) {
-
-    /* .toggle-menu {
-        display: block;
-    }
-
-    header .list {
-        background-color: #5D5D5D;
-        width: 100%;
-        position: fixed;
-        top: 100px;
-        left: -100%;
-        text-align: center;
-        transition: all 0.4s;
-    }
-
-    .list.active {
-        left: 0;
-    }
-
-    .list ul {
-       flex-direction: column;
-    }
-
-    .list ul li {
-        margin: 10px 0;
-    } */
 
     .image-discount h3 {
         font-size: 32px;
