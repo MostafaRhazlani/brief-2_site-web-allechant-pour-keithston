@@ -318,13 +318,13 @@ section h2 {
 
 /******** Page Services ********/
 .foods {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .foods .food img {
-    width: 370px;
+    width: 100%;
     box-shadow: 5px 5px 6px #414141;
     border-radius: 10px;
 }
@@ -366,7 +366,7 @@ section h2 {
     font-weight: 500;
     font-size: 48px;
     color: var(--btn-color);
-    width: 30%;
+    width: 70%;
     text-align: center;
 }
 
@@ -591,12 +591,33 @@ footer .footer-nav {
         font-size: 1.3rem;
         font-weight: var(--font-weight);
     }
+
+    /* page services */
+    .foods {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .foods .food img {
+        width: 100%;
+        box-shadow: 5px 5px 6px #414141;
+        border-radius: 10px;
+    }
+
+    .foods .food {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 750px) {
 
     header .list {
         display: none;
+    }
+
+    .image-discount h3 {
+        font-size: 32px;
     }
 
     /* responsuve products */
@@ -644,5 +665,16 @@ footer .footer-nav {
         color: #5D5D5D;
         font-size: 1.1rem;
         font-weight: var(--font-weight);
+    }
+
+    /* page services */
+    .foods {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .foods .food {
+        margin-bottom: 20px;
     }
 }
