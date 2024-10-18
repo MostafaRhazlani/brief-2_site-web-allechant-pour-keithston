@@ -37,7 +37,6 @@ section {
 }
 
 .container {
-    max-width: 1490px;
     margin: auto;
 }
 
@@ -192,7 +191,7 @@ section h2 {
 
 .products {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -305,28 +304,27 @@ section h2 {
 }
 
 .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     margin-top: 70px;
 }
 
 .menu img {
-    width: 400px;
-    margin-bottom: 18px;
+    width: 100%;
     box-shadow: 5px 5px 6px #414141;
     border-radius: 10px;
 }
 
 /******** Page Services ********/
 .foods {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .foods .food img {
-    width: 370px;
+    width: 100%;
     box-shadow: 5px 5px 6px #414141;
     border-radius: 10px;
 }
@@ -368,7 +366,7 @@ section h2 {
     font-weight: 500;
     font-size: 48px;
     color: var(--btn-color);
-    width: 30%;
+    width: 70%;
     text-align: center;
 }
 
@@ -462,7 +460,6 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* margin-top: 30px; */
 }
 
 footer .footer-nav {
@@ -541,6 +538,190 @@ footer .footer-nav {
     font-weight: var(--font-weight);
 }
 
+@media (max-width: 1120px) {
 
+    header .list {
+        display: none;
+    }
 
+    /* responsuve products */
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
 
+    .content-footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* responsive footer */
+    .follow_us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .follow_us p {
+        margin-bottom: 10px;
+    }
+
+    .image-discount h3 {
+        font-size: 38px;
+    }
+
+    /* responsive page menu */
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 70px;
+    }
+
+    .categories .content-categories {
+        display: flex;
+        justify-content: space-evenly;
+        width: 75%;
+        margin: auto;
+    }
+
+    .content-categories a {
+        color: #5D5D5D;
+        font-size: 1.3rem;
+        font-weight: var(--font-weight);
+    }
+
+    /* page services */
+    .foods {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .foods .food img {
+        width: 100%;
+        box-shadow: 5px 5px 6px #414141;
+        border-radius: 10px;
+    }
+
+    .foods .food {
+        margin-bottom: 20px;
+    }
+
+    /* page contact */
+    .image-contact form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 70%;
+        height: 400px;
+    }
+
+    form .full_name {
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+    }
+
+    form .full_name input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+
+    header .list {
+        display: none;
+    }
+
+    .image-discount h3 {
+        font-size: 32px;
+    }
+
+    /* responsuve products */
+    .products {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .content-footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .content-footer > div {
+        margin-bottom: 40px;
+    }
+
+    /* responsive footer */
+    .follow_us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .follow_us p {
+        margin-bottom: 10px;
+    }
+
+    /* responsive page menu */
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 70px;
+    }
+
+    .categories .content-categories {
+        display: flex;
+        justify-content: space-evenly;
+        width: 75%;
+        margin: auto;
+    }
+
+    .content-categories a {
+        color: #5D5D5D;
+        font-size: 1.1rem;
+        font-weight: var(--font-weight);
+    }
+
+    /* page services */
+    .foods {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .foods .food {
+        margin-bottom: 20px;
+    }
+
+    /* page contact */
+    .image-contact h2 {
+        text-align: center;
+    }
+
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image-contact form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        height: 400px;
+    }
+
+    form .full_name {
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+    }
+
+    form .full_name input {
+        width: 100%;
+    }
+}
